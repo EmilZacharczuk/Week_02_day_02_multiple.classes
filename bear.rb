@@ -1,10 +1,15 @@
 class Bear
+
 attr_reader :name, :type
 
   def initialize(name, type)
     @name = name
     @type = type
     @food = []
+  end
+
+  def roar
+    return "Urghhhh!"
   end
 
   def how_much_food
@@ -19,6 +24,6 @@ attr_reader :name, :type
     for fish in river.fish()
       adding_food(fish)
     end
+  river.empty_river
   end
-  river.empty_river  
 end
