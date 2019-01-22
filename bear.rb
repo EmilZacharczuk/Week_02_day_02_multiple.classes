@@ -10,4 +10,8 @@ attr_reader :name, :type
   def how_much_food
     return @food.length
   end
+
+  def adding_food(fish)
+    return @food << fish
+  end
 end

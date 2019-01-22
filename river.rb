@@ -1,4 +1,5 @@
 class River
+attr_writer  :fish
 
 attr_reader  :name
 
