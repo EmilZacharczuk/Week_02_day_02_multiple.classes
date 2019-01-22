@@ -1,7 +1,6 @@
 class River
-attr_writer  :fish
 
-attr_reader  :name
+attr_reader  :name, :fish
 
   def initialize(name)
     @name = name
@@ -20,4 +19,7 @@ attr_reader  :name
     return @fish.length
   end
 
+  def empty_river
+    return @fish = []
+  end
 end

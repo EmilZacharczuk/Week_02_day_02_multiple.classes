@@ -14,4 +14,11 @@ attr_reader :name, :type
   def adding_food(fish)
     return @food << fish
   end
+
+  def take_fish_from_river(river)
+    for fish in river.fish()
+      adding_food(fish)
+    end
+  end
+  river.empty_river  
 end

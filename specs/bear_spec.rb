@@ -32,4 +32,6 @@ class BearTest < MiniTest::Test
     assert_equal(3, @bear.how_much_food)
   end
 
+  def test
+  end
 end
